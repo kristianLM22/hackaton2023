@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+    <title>Operação</title>
+</head>
+<body>
+    <div class="topo"></div>
+    <div class="container">
+        <label class="labels" >SETOR</label>
+        <select class="options">
+            <option value="Quadrante 01">Quadrante 01</option>
+            <option value="Quadrante 02">Quadrante 02</option>
+            <option value="Quadrante 03">Quadrante 03</option>
+            <option value="Quadrante 04">Quadrante 04</option>
+        </select><br><br><br>
+        
+        <label class="labels" >MÁQUINA</label>
+        <select class="options">
+            <option value="1-FRESADORA CONVENCIONAL">1-FRESADORA CONVENCIONAL</option>
+            <option value="2-TORNO CONVENCIONAL">2-TORNO CONVENCIONAL</option>
+            <option value="3-TORNO CNC">3-TORNO CNC</option>
+            <option value="4-RETÍFICA">4-RETÍFICA</option>
+        </select><br><br><br>
+        
+        <label class="labels" >PROCESSO</label>
+        <select class="options" id="processo">
+            <option value="1-DESBASTE">1-DESBASTE</option>
+            <option value="2-FURO DE CENTRO">2-FURO DE CENTRO</option>
+            <option value="3-FACEAMENTO">3-FACEAMENTO</option>
+            <option value="4-POLIMENTO">4-ROSCA EXTERNA</option>
+        </select><br><br><br>
+        
+        <button type="button" id="btnIniciar" onclick="tempo()">INICIAR</button><br><br>
+        
+        <h3 id="time">00:00</h3><br><br><br>
+        
+        <button type="button" id="btnPausar" onclick="pausar()">PAUSAR</button>   
+        
+        <label id="motPausa">Motivo da Pausa</label>
+        <select id="optionsPausa">
+            <option value="ALMOÇO">ALMOÇO</option>
+            <option value="FIM DE EXPEDIENTE">FIM DE EXPEDIENTE</option>
+        </select>
+        <button type="button" id="btnFinalizar">FINALIZAR PROCESSO</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
